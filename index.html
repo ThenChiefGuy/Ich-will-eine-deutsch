@@ -43,16 +43,29 @@
             font-size: 0.8em;
             color: #888;
         }
+        .danke-message {
+            display: none;
+            font-size: 3em;
+            color: #4CAF50;
+            margin-top: 20px;
+        }
     </style>
+    <script>
+        function showDanke() {
+            document.querySelector('.container').style.display = 'none';
+            document.querySelector('.danke-message').style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h1>Hab ich eine 1 in Deutsch?</h1>
         <div class="button-container">
-            <button>Ja</button>
-            <button>Ja</button>
+            <button onclick="showDanke()">Ja</button>
+            <button onclick="showDanke()">Ja</button>
         </div>
     </div>
+    <div class="danke-message">Danke</div>
     <footer>Abdoalrahman Abboud Almohamad 2024</footer>
 </body>
 </html>
